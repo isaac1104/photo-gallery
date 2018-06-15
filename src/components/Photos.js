@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
+import CustomImageComponent from './CustomImageComponent';
 
 class Photos extends Component {
   state = {
@@ -57,7 +58,7 @@ class Photos extends Component {
 
     return (
       <Fragment>
-        <Gallery photos={PHOTO_SET} margin={3} onClick={this.openLightbox.bind(this)} />
+        <Gallery photos={PHOTO_SET} margin={3} onClick={this.openLightbox.bind(this)} ImageComponent={CustomImageComponent} />
         <Lightbox images={PHOTO_SET}
           onClose={this.closeLightbox.bind(this)}
           onClickPrev={this.gotoPrevious.bind(this)}
