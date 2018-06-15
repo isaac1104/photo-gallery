@@ -14,7 +14,7 @@ const CustomImageComponent = ({ index, onClick, photo, margin }) => {
   const sy = (100 - ((30 / photo.height) * 100)) / 100;
   return (
     <div style={{ margin, width: photo.width, ...cont }} className={!photo.selected ? 'not-selected' : ''}>
-      <FadeIn>
+      <FadeIn height={600}>
         {onload => (
           <img {...photo} onClick={(e) => onClick(e, { index, photo })} onLoad={onload} />
         )}
