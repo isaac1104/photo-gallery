@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className='App-title'>Jiselle & Isaac's Photo Gallery</h1>
+        <h1 className='App-title'>Isaac & Jiselle's Photo Gallery</h1>
         <span role='img' aria-label='emoji'>🐵❤️🐰</span>
       </header>
       <Photos />
