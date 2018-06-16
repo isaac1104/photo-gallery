@@ -34,43 +34,43 @@ class Photos extends Component {
 
   render() {
     const PHOTO_SET = [
-       { src: '/photos/IMG_0719.jpg', width: 1, height: 1 },
-       { src: '/photos/IMG_0748.JPG', width: 3, height: 4 },
-       { src: '/photos/IMG_0829.jpg', width: 4, height: 3 },
-       { src: '/photos/IMG_0830.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_0926.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_1808.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_0930.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_1064.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_1409.jpg', width: 4, height: 3 },
-       { src: '/photos/IMG_1065.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_2090.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_1812.jpg', width: 4, height: 3 },
-       { src: '/photos/IMG_2095.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_2206.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_2211.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_2279.jpg', width: 4, height: 3 },
-       { src: '/photos/IMG_2387.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_2633.jpg', width: 1, height: 1 },
-       { src: '/photos/IMG_2610.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_3037.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_3681.jpg', width: 1, height: 1 },
-       { src: '/photos/IMG_4479.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_3719.jpg', width: 1, height: 1 },
-       { src: '/photos/IMG_4044.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_4524.jpg', width: 4, height: 3 },
-       { src: '/photos/IMG_4926.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_5049.jpg', width: 3, height: 4 },
-       { src: '/photos/IMG_5051.png', width: 3, height: 4 },
-       { src: '/photos/IMG_5059.jpg', width: 4, height: 3 },
-       { src: '/photos/IMG_E1756.jpg', width: 3, height: 4 }
+       { src: 'https://i.imgur.com/8KOXCt3.jpg', width: 1, height: 1 },
+       { src: 'https://i.imgur.com/DrWVpyC.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/gKXx75Z.jpg', width: 4, height: 3 },
+       { src: 'https://i.imgur.com/9CPlSKZ.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/4DN3VUd.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/m5paRzc.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/8miEWQO.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/aWTvPon.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/uoeMJRt.jpg', width: 4, height: 3 },
+       { src: 'https://i.imgur.com/kqWs9My.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/35fxDB6.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/Oau11JE.jpg', width: 4, height: 3 },
+       { src: 'https://i.imgur.com/jPLN4ib.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/fv4svCm.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/cyZ3Ypw.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/GBb2dDI.jpg', width: 4, height: 3 },
+       { src: 'https://i.imgur.com/XsKweYj.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/AZFCSsk.jpg', width: 1, height: 1 },
+       { src: 'https://i.imgur.com/KNcnspQ.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/US2NnFA.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/xAX8GUU.jpg', width: 1, height: 1 },
+       { src: 'https://i.imgur.com/WwkeWa4.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/MJ2cB1k.jpg', width: 1, height: 1 },
+       { src: 'https://i.imgur.com/lIpURVJ.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/QfUWVQ8.jpg', width: 4, height: 3 },
+       { src: 'https://i.imgur.com/96Tqhdg.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/B3X9ZFd.jpg', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/ZqoQ3ar.png', width: 3, height: 4 },
+       { src: 'https://i.imgur.com/rSCb5j9.jpg', width: 4, height: 3 },
+       { src: 'https://i.imgur.com/nycf4TN.jpg', width: 3, height: 4 }
     ];
 
     return (
       <Fragment>
         <Gallery
           photos={PHOTO_SET}
-          columns={/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 3 : 5} 
+          columns={/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 3 : 5}
           margin={3}
           onClick={this.openLightbox.bind(this)}
           ImageComponent={CustomImageComponent}
