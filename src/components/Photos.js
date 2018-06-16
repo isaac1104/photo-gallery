@@ -34,26 +34,26 @@ class Photos extends Component {
 
   render() {
     const PHOTO_SET = [
-       { src: 'https://source.unsplash.com/collection/1673600/800x600', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/2148809/800x799', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/1394721/600x799', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/193055/600x799', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1457745/600x799', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1525589/800x599', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/332024/600x799', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1717137/800x599', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/494266/800x599', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1223439/800x600', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1819753/800x599', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1410320/800x799', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/2075144/600x799', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/445266/600x799', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/395791/600x799', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/167880/800x599', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1557812/600x799', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1242150/800x599', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/573226/800x599', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/577737/800x599', width: 1, height: 1 }
+       { src: 'https://source.unsplash.com/collection/1673600', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/2148809', width: 1, height: 1 },
+       { src: 'https://source.unsplash.com/collection/1394721', width: 3, height: 4 },
+       { src: 'https://source.unsplash.com/collection/193055', width: 3, height: 4 },
+       { src: 'https://source.unsplash.com/collection/1457745', width: 3, height: 4 },
+       { src: 'https://source.unsplash.com/collection/1525589', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/332024/', width: 3, height: 4 },
+       { src: 'https://source.unsplash.com/collection/1717137', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/494266', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/1223439', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/1819753', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/1410320', width: 1, height: 1 },
+       { src: 'https://source.unsplash.com/collection/2075144', width: 1, height: 1 },
+       { src: 'https://source.unsplash.com/collection/445266', width: 3, height: 4 },
+       { src: 'https://source.unsplash.com/collection/395791', width: 3, height: 4 },
+       { src: 'https://source.unsplash.com/collection/167880', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/1557812', width: 3, height: 4 },
+       { src: 'https://source.unsplash.com/collection/1242150', width: 1, height: 1 },
+       { src: 'https://source.unsplash.com/collection/573226', width: 4, height: 3 },
+       { src: 'https://source.unsplash.com/collection/577737', width: 1, height: 1 }
     ];
 
     return (
