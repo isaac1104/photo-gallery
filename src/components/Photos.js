@@ -68,7 +68,13 @@ class Photos extends Component {
 
     return (
       <Fragment>
-        <Gallery photos={PHOTO_SET} columns={5} margin={3} onClick={this.openLightbox.bind(this)} ImageComponent={CustomImageComponent} />
+        <Gallery
+          photos={PHOTO_SET}
+          columns={/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 3 : 5} 
+          margin={3}
+          onClick={this.openLightbox.bind(this)}
+          ImageComponent={CustomImageComponent}
+        />
         <Lightbox images={PHOTO_SET}
           onClose={this.closeLightbox.bind(this)}
           onClickPrev={this.gotoPrevious.bind(this)}
