@@ -34,31 +34,41 @@ class Photos extends Component {
 
   render() {
     const PHOTO_SET = [
-       { src: 'https://source.unsplash.com/collection/1673600', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/2148809', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/1394721', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/193055', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1457745', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1525589', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/332024/', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1717137', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/494266', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1223439', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1819753', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1410320', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/2075144', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/445266', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/395791', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/167880', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/1557812', width: 3, height: 4 },
-       { src: 'https://source.unsplash.com/collection/1242150', width: 1, height: 1 },
-       { src: 'https://source.unsplash.com/collection/573226', width: 4, height: 3 },
-       { src: 'https://source.unsplash.com/collection/577737', width: 1, height: 1 }
+       { src: '/photos/IMG_0719.jpg', width: 1, height: 1 },
+       { src: '/photos/IMG_0748.JPG', width: 3, height: 4 },
+       { src: '/photos/IMG_0829.jpg', width: 4, height: 3 },
+       { src: '/photos/IMG_0830.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_0926.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_0930.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_1808.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_1064.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_1409.jpg', width: 4, height: 3 },
+       { src: '/photos/IMG_1065.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_2090.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_1812.jpg', width: 4, height: 3 },
+       { src: '/photos/IMG_2095.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_2206.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_2211.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_2279.jpg', width: 4, height: 3 },
+       { src: '/photos/IMG_2387.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_2633.jpg', width: 1, height: 1 },
+       { src: '/photos/IMG_2610.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_3037.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_3681.jpg', width: 1, height: 1 },
+       { src: '/photos/IMG_4479.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_3719.jpg', width: 1, height: 1 },
+       { src: '/photos/IMG_4044.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_4524.jpg', width: 4, height: 3 },
+       { src: '/photos/IMG_4926.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_5049.jpg', width: 3, height: 4 },
+       { src: '/photos/IMG_5051.png', width: 3, height: 4 },
+       { src: '/photos/IMG_5059.jpg', width: 4, height: 3 },
+       { src: '/photos/IMG_E1756.jpg', width: 3, height: 4 }
     ];
 
     return (
       <Fragment>
-        <Gallery photos={PHOTO_SET} margin={3} onClick={this.openLightbox.bind(this)} ImageComponent={CustomImageComponent} />
+        <Gallery photos={PHOTO_SET} columns={5} margin={3} onClick={this.openLightbox.bind(this)} ImageComponent={CustomImageComponent} />
         <Lightbox images={PHOTO_SET}
           onClose={this.closeLightbox.bind(this)}
           onClickPrev={this.gotoPrevious.bind(this)}
